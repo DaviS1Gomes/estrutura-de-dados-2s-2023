@@ -5,16 +5,16 @@ int maior_menor_array(int variables[], int size){
   int i ,maior = variables[0],menor = variables[0];
   
   for(i = 1; i < size; i++){
-    if(variables[i] < menor){
+    if(variables[i] > menor){
       menor = variables[i];
     }
 
-    if(variables[i] > maior){
+    if(variables[i] < maior){
       maior = variables[i];
     }
 
   }
-  printf("%d, %d", maior, menor);
+    printf("%d, %d", maior, menor);
   }
 
 int main(){
